@@ -1,5 +1,5 @@
 :root{
-    --primary-color: #067edf;
+    --primary-color: #bc1823;
     --secondary-color: #0661f4;
     --dark-color: #000;
     --white-color: #d8d8dd;
@@ -31,7 +31,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .fa-heart:hover{
-    color: var(--secondary-color) !important;
+    color: var(--dark-color) !important;
  }
 
 .cssicon{
@@ -39,7 +39,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .checklist >li i{
-    color: var(--secondary-color);
+    color: var(--primary-color);
 }
 
 code[class*="language-"],
