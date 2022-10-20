@@ -1,14 +1,16 @@
 //Get the user input
 
-function getValues(){
+function getValue(){
 
     //make alert invisible
     document.getElementById("alert").classList.add("invisible");
+
     //get user string from the page
     let userString = document.getElementById("userString").value;
 
     // check for a palindrome
-    let returnObj = function checkForPalindrome(userString);
+    let returnObj = checkForPalindrome(userString);
+    
     // display message to the user
     displayMessage(returnObj);
 }
@@ -45,9 +47,9 @@ function checkForPalindrome(userString){
 
 // display message to the user.
 
-function displayMessage(){
+function displayMessage(returnObj){
 
     document.getElementById("alertHeader").innerHTML = returnObj.msg;
-    document.getElementById("msg"),innerHTML = `Your phrase reversed is: ${returnObj.reversed}`;
+    document.getElementById("msg").innerHTML = `Your phrase reversed is: ${returnObj.reversed}`;
     document.getElementById("alert").classList.remove("invisible");
 }

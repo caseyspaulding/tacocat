@@ -54,7 +54,7 @@
                     <a class="nav-link" href="code.html">The Code</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Git Repo</a>
+                    <a class="nav-link" href="https://github.com/caseyspaulding/tacocat">Git Repo</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" target="_blank" rel="noopener noreferrer" href="https://www.caseyspaulding.com">About</a>
@@ -72,18 +72,17 @@
                     Kayak: A Coding Project
                 </h1>
                 <h4 class="lead pb-3">
-                    There and back again. A javascript coding exercise using arrays. Write a 
-                    program that displays a string in reverse. 
+                    Kayak is a palindrome. A palindrome is a word, phrase, or sequence that reads the same backward as forward. Write a program that checks if the phrase entered is a palindrome. Another example is Taco Cat.
                 </h4>
             </div>
             <div class="col">
-                <h5 class="border-1 border-bottom border-info">Enter A String To Reverse</h5>
+                <h5 class="border-1 border-bottom border-info">Enter a phrase or word to check</h5>
                 <form class="row gx-3 gy-2">
                     <div class="col">
-                        <input id="userString" type="text" class="form-control" placeholder="Enter A String" aria-label="Enter A String">
+                        <input id="userString" type="text" class="form-control" placeholder="Enter A Word or Phrase" aria-label="Enter A Word or Phrase.">
                     </div>
                     <div class="col-12">
-                        <button type="button" id="btnSubmit" class="btn btn-info">Reverse Me</button>
+                        <button type="button" id="btnSubmit" class="btn btn-info">Check It</button>
                     </div>
                     <div class="alert alert-info mt-5 invisible fade show" id="alert" role="alert">
                         <h4 id="alertHeader" class="alert-heading">Well done!</h4>
@@ -127,7 +126,7 @@
 </script>
 <script src="js/site.js"></script>
 <script>
-    document.getElementById("btnSubmit").addEventListener("click", getValue);
+    document.getElementById("btnSubmit").addEventListener("click",getValue);
 </script>
 
 </body>
